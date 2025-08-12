@@ -59,7 +59,8 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'psdashboard'
-          slot-name: 'Production'
-          package: .
+          publish-profile: $
+          package: ./dist/hello-world-app
 
           
+
