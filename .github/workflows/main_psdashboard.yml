@@ -50,9 +50,10 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_616C80E187A84CE293CFC502A6A1BFC0 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_8DF5535EB31F43E8B35B4753975854D9 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F9DF9381C5004CFBA1F84031C72DA328 }}
+          client-id: 1e22cfa7-4ebc-4cbf-b345-3b139df875c9
+          tenant-id: 675de428-a7e8-422c-aac4-c04088901742
+          subscription-id: 79c7283c-0743-4ea4-b912-9a1599ddb252
+
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -63,4 +64,5 @@ jobs:
           package: ./dist/hello-world-app
 
           
+
 
